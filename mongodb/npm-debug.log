@@ -1,0 +1,65 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'koa',
+1 verbose cli   '--registry=http://registry.npm.taobao.org' ]
+2 info using npm@2.15.0
+3 info using node@v4.4.2
+4 verbose install initial load of /Users/tanjibo/www/nodejs/mongodb/package.json
+5 verbose installManyTop reading scoped package data from /Users/tanjibo/www/nodejs/mongodb/node_modules/mongoose/package.json
+6 verbose readDependencies loading dependencies from /Users/tanjibo/www/nodejs/mongodb/package.json
+7 silly cache add args [ 'koa', null ]
+8 verbose cache add spec koa
+9 silly cache add parsed spec Result {
+9 silly cache add   raw: 'koa',
+9 silly cache add   scope: null,
+9 silly cache add   name: 'koa',
+9 silly cache add   rawSpec: '',
+9 silly cache add   spec: 'latest',
+9 silly cache add   type: 'tag' }
+10 silly addNamed koa@latest
+11 verbose addNamed "latest" is being treated as a dist-tag for koa
+12 info addNameTag [ 'koa', 'latest' ]
+13 silly mapToRegistry name koa
+14 silly mapToRegistry using default registry
+15 silly mapToRegistry registry http://registry.npm.taobao.org/
+16 silly mapToRegistry data Result {
+16 silly mapToRegistry   raw: 'koa',
+16 silly mapToRegistry   scope: null,
+16 silly mapToRegistry   name: 'koa',
+16 silly mapToRegistry   rawSpec: '',
+16 silly mapToRegistry   spec: 'latest',
+16 silly mapToRegistry   type: 'tag' }
+17 silly mapToRegistry uri http://registry.npm.taobao.org/koa
+18 verbose addNameTag registry:http://registry.npm.taobao.org/koa not in flight; fetching
+19 verbose request uri http://registry.npm.taobao.org/koa
+20 verbose request no auth needed
+21 info attempt registry request try #1 at 11:18:20
+22 verbose request id 1c2c8f01eaffeaed
+23 http request GET http://registry.npm.taobao.org/koa
+24 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npm.taobao.org registry.npm.taobao.org:80
+25 info attempt registry request try #2 at 11:19:00
+26 http request GET http://registry.npm.taobao.org/koa
+27 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npm.taobao.org registry.npm.taobao.org:80
+28 info attempt registry request try #3 at 11:20:31
+29 http request GET http://registry.npm.taobao.org/koa
+30 verbose stack Error: getaddrinfo ENOTFOUND registry.npm.taobao.org registry.npm.taobao.org:80
+30 verbose stack     at errnoException (dns.js:27:10)
+30 verbose stack     at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:78:26)
+31 verbose cwd /Users/tanjibo/www/nodejs/mongodb
+32 error Darwin 15.2.0
+33 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "koa" "--registry=http://registry.npm.taobao.org"
+34 error node v4.4.2
+35 error npm  v2.15.0
+36 error code ENOTFOUND
+37 error errno ENOTFOUND
+38 error syscall getaddrinfo
+39 error network getaddrinfo ENOTFOUND registry.npm.taobao.org registry.npm.taobao.org:80
+39 error network This is most likely not a problem with npm itself
+39 error network and is related to network connectivity.
+39 error network In most cases you are behind a proxy or have bad network settings.
+39 error network
+39 error network If you are behind a proxy, please make sure that the
+39 error network 'proxy' config is set properly.  See: 'npm help config'
+40 verbose exit [ 1, true ]

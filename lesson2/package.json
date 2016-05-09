@@ -1,0 +1,22 @@
+{
+  "name": "lesson2",
+  "version": "1.0.0",
+  "description": "person use study",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "tanjibo"
+  },
+  "keywords": [
+    "tanjibo"
+  ],
+  "author": "tanjibo",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.4",
+    "utility": "^1.7.1"
+  }
+}
